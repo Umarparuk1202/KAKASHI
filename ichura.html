@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ichiraku Ramen Recipe</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            margin: 0;
+            font-size: 36px;
+            text-transform: uppercase;
+        }
+        h2 {
+            margin-top: 30px;
+            font-size: 24px;
+            color: #f90707;
+            background-color: rgb(62, 23, 23);
+            width: fit-content;
+            padding: 3px;
+            border-radius: 8px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        ul {
+            margin: 0;
+        }
+        li {
+            margin-bottom: 10px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .instructions {
+            margin-top: 20px;
+        }
+        .instructions ol {
+            counter-reset: step;
+            padding-left: 20px;
+        }
+        .instructions ol li {
+            position: relative;
+            counter-increment: step;
+            margin-bottom: 20px;
+        }
+        .instructions ol li:before {
+            content: counter(step);
+            background: #333;
+            color: #fff;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            display: inline-block;
+            position: absolute;
+            left: -45px;
+        }
+        span{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><span>Ichiraku</span> Ramen<span> Recipe</span></h1>
+    </header>
+    <div class="container">
+        <img src="IMG/ichu.jpg" alt="Ichiraku Ramen">
+        <h2>Ingredients:</h2>
+        <ul>
+            <li>2 packs of ramen noodles</li>
+            <li>4 cups chicken broth</li>
+            <li>2 tablespoons soy sauce</li>
+            <li>1 tablespoon miso paste</li>
+            <li>1 teaspoon sesame oil</li>
+            <li>2 cloves garlic, minced</li>
+            <li>1-inch piece of ginger, grated</li>
+            <li>2 green onions, sliced</li>
+            <li>2 eggs, boiled and halved</li>
+            <li>1 cup sliced mushrooms</li>
+            <li>1 cup shredded cooked chicken</li>
+            <li>Nori seaweed, for garnish</li>
+            <li>Sesame seeds, for garnish</li>
+        </ul>
+        <h2 class="instructions">Instructions:</h2>
+        <ol class="instructions">
+            <li>Bring the chicken broth to a simmer in a pot over medium heat.</li>
+            <li>Add soy sauce, miso paste, sesame oil, minced garlic, and grated ginger. Stir to combine.</li>
+            <li>Add sliced mushrooms and shredded chicken. Let simmer for 5 minutes.</li>
+            <li>Cook the ramen noodles according to the package instructions.</li>
+            <li>Divide the cooked noodles among serving bowls. Ladle the broth and chicken mixture over the noodles.</li>
+            <li>Top each bowl with a halved boiled egg, sliced green onions, nori seaweed, and sesame seeds.</li>
+            <li>Enjoy your delicious Ichiraku Ramen!</li>
+        </ol>
+    </div>
+</body>
+</html>

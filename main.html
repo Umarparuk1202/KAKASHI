@@ -1,0 +1,244 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Page</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        body{
+            width: 100%;
+            min-height: 100%;
+            background: rgb(243, 234, 234);
+        }
+        header{
+            height: 60px;
+            width: 100%;
+            background: black;
+            color: #fff;
+            display: flex;
+            align-items: center;
+        }
+        .container{
+            width: 97%;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        nav ul li{
+            list-style: none;
+            display: inline;
+            margin-right: 18px;
+           font-family:Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .logo{
+            font-size: 24px;
+            color: rgb(230, 251, 251);
+            padding-right: 880px;
+        }
+        .hero{
+            width: 100%;
+            height: auto;
+            background: url(IMG/back.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            text-align: center;
+            padding: 140px 0;
+            margin-bottom: 20px;
+        }
+        .hro h2{
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        .hro p{
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .search-box{
+            max-width: 550px;
+            margin: 15px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: red;
+        }
+        .search-box input{
+            width: 70%;
+            padding: 10px;
+            outline: none;
+            border: 0;
+            border-radius: 5px 0 0 5px;
+            font-size: 1rem;
+            border: 1px solid rgb(241, 45, 45);;
+        }
+        .search-box button{
+            padding: 10px 20px;
+            outline: none;
+            border: 0;
+            border-radius:0px 5px 5px 0px;
+            font-size: 1rem;
+            background: rgb(241, 45, 45);
+            color: #fff;
+            cursor: pointer;
+        }
+        /*--....Recipe Section....--*/
+        .recipes{
+            padding: 10px 0;
+        }
+        .recipes h1{
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 28px;
+            padding: 12px;
+        }
+        .recipe-section{
+            width: 90%;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            column-gap: 10px;
+        }
+        .recipe-card{
+            background: #fff;
+            margin: 30px 10px;
+            border-radius: 8px;
+            border: 1px solid#ccc;
+            overflow: hidden;
+            box-shadow: 0 5px 8px rgba(0,0,0,0.1);
+            width: 31.5%;
+            display: inline-block;
+        }
+        .recipe-card img{
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            background-position:center;
+        }
+        .recipe-card h2{
+            font-size: 22px;
+            padding: 14px;
+        }
+        .recipe-card p{
+            font-size: 18px;
+            padding: 20px;
+        }
+
+        .recipe-card a{
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            background: #333;
+            color: #fff;
+            padding: 15px 0;
+            cursor: pointer;
+            font-weight: bolder;
+        }
+        footer{
+            background: #333;
+            padding: 20px 0;
+            color: #fff;
+            text-align: center;
+        }
+        span{
+            color: rgb(251, 15, 15);
+        }
+        li{
+           font-weight: bold;
+        }
+       .one:hover{
+        text-decoration:underline;
+        color: rgb(251, 15, 15);
+       }
+       .two:hover{
+        text-decoration:underline; color: rgb(251, 15, 15);
+       }
+       .three:hover{
+        text-decoration:underline; color: rgb(251, 15, 15);
+       }
+       .four:hover{
+        text-decoration:underline; color: rgb(251, 15, 15);
+       }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container"> <img src="IMG/logo.jpg" alt="" width="40px">
+            <h1 class="logo"> 
+                <span>Delicous</span> Recipe</h1>
+            <nav> <ul class="nav-list">
+              <a href="main.html" style="color: white;"> <li class="one"><span>H</span>ome</li> </a> 
+              <a href="about.html" style="color: white;">   <li class="two"><span>A</span>bout</li><a> 
+                <a href="#card"style="color: white;">  <li class="three"><span>R</span>ecipe</li> </a>
+                <a href="#contact" style="color: white;">   <li class="four"><span>C</span>ontact</li> </ul> </a>
+                
+            </nav>
+
+        </div>
+    </header>
+    <section class="hero">
+        <div class="hreo-section">
+            <h2 style="color: rgb(251, 226, 226);">Welcome to our Recipe Collection !</h2>
+            <p style="color:rgb(251, 226, 226);">Search mouth watering recipe to satisfy your craving</p>
+
+            <form class="search-box">
+                <input type="text" placeholder="Search Recipe..">
+                <button type="submit">Search</button>
+              </form>
+        </div>
+    </section>
+ <!--....Recipe Section....-->
+    <section class="recipes">
+        <h1 style="background-color: rgb(15, 14, 14) ; color: white; border-radius: 2px;"> <span>R</span>ecipe <span>M</span>enu</h1>
+        <div class="reci"> 
+        <div class="recipe-card" id="card">
+            <img src="IMG/7308586-download-an-inviting-platter-of-scrumptious-biryani-wallpaper.jpg" alt=""><h2>Chicken Biriyani</h2><a href="cheken.html">View Recipe</a>
+        </div>
+        <div class="recipe-card">
+            <img src="IMG/mutton.jpg" alt=""><h2>Mutton Biriyani</h2><a href="Mutton bri.html">View Recipe</a>
+        </div>
+        <div class="recipe-card"> 
+            <img src="IMG/nood.jpg" alt=""><h2>Veg Noodles</h2><a href="nood.html">View Recipe</a>
+        </div>
+            <div class="recipe-card">
+                <img src="IMG/parotta (1).jpg" alt=""><h2>Parotta</h2><a href="parotta.html">View Recipe</a>
+            </div>
+            <div class="recipe-card">
+                <img src="IMG/chi curry.jpg" alt=""><h2>Chicken Curry</h2><a href="chic curry.html">View Recipe</a>
+            </div>
+            <div class="recipe-card">
+                <img src="IMG/fish.jpg" alt=""><h2>Fish Curry</h2><a href="fish.html">View Recipe</a>
+            </div>
+            <div class="recipe-card">
+                <img src="IMG/ichu.jpg" alt=""><h2>Ichiraku Ramen</h2><a href="ichura.html">View Recipe</a>
+            </div>
+            <div class="recipe-card">
+                <img src="IMG/65.jpg" alt=""><h2>Chicken 65</h2><a href="chicken 65.html">View Recipe</a>
+            </div>
+            <div class="recipe-card">
+                <img src="IMG/recipe (2).jpg" alt=""><h2>Simple Omelette</h2><a href="new.html">View Recipe</a>
+            </div>
+            <div class="recipe-card">
+                <img src="IMG/fired.jpg" alt=""><h2>Fried Rice</h2><a href="fried.html">View Recipe</a>
+            </div>
+            <div class="recipe-card">
+                <img src="IMG/recipe (1).jpg" alt=""><h2>Pumpkin Soup</h2><a href="nnn.html">View Recipe</a>
+            </div>
+            <div class="recipe-card">
+                <img src="IMG/KFC.jpg" alt=""><h2>KFC Chicken</h2><a href="KFC.html">View Recipe</a>
+            </div>   </div>
+    </section>
+<footer id="contact"><p>&copy; 2024 Delicious Recipes <hr> <p> &#128222;+91: 1202 1202 1202 || &#128231; DeliciousRecipes@gmail.com ||  &#127968; 1st & 2nd Floor, 6th Ave, S Block, Anna Nagar, Chennai, Tamil Nadu 600040, India</p>
+</p> 
+</footer>
+</body>
+</html>
